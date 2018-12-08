@@ -1,12 +1,10 @@
-def main():
-    def findMin(x):
-        minNum = x[0]
-        for i in x:
-            if minNum > i:
-                minNum = i
-        return minNum
-
-    print(findMin([0,1,2,3,4,5,-3,24,-56])) # = -56
-
-if __name__ == '__main__':
-    main()
+def findMin(l):
+    min = -1
+    for i in l:
+        print (i)
+        if i<min:
+            min = i
+    print("the lowest value is: ",min)
+    
+l=[12,0,15,-30,-24,40]
+findMin(l)
